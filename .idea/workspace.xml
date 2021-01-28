@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d479eb-d97f-43b8-a5d4-a19570c564d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/npm-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/npm-publish.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="97d479eb-d97f-43b8-a5d4-a19570c564d2" name="Default Changelist" comment="added github workflow">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/npm-publish.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/npm-publish.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611823411532</updated>
-      <workItem from="1611823412864" duration="4222000" />
+      <workItem from="1611823412864" duration="4533000" />
     </task>
     <task id="LOCAL-00001" summary="added github workflow">
       <created>1611826931860</created>
@@ -88,10 +86,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1712" y="592" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1611823478464" />
-    <state x="856" y="304" key="CommitChangelistDialog2" timestamp="1611826931638">
+    <state x="856" y="304" key="CommitChangelistDialog2" timestamp="1611827814319">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="856" y="304" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1611826931638" />
+    <state x="856" y="304" key="CommitChangelistDialog2/0.23.2560.1417@0.23.2560.1417" timestamp="1611827814319" />
     <state width="2518" height="409" key="GridCell.Tab.0.bottom" timestamp="1611824830341">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
