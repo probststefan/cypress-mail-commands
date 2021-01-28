@@ -1,14 +1,28 @@
 # NPM TypeScript Module Boilerplate
 
-> Note: This module should **not** be required!
+[![npm version](https://badge.fury.io/js/cypress-mail-commands.svg)](https://badge.fury.io/js/cypress-mail-commands)
 
-### What is it?
+## Installing
 
-This is the boilerplate that you can use to build your awesome NPM modules using TypeScript ✨
+Install the module.
 
-### How to use it?
+```bash
+npm install cypress-mail-commands --save-dev
+```
 
-There are 2 ways to use it:
+Add the following line to `cypress/support/index.js`.
 
-1. Go to the [repository page](https://github.com/uWynell/typescript-module-boilerplate) and press the green **"Use this template"** button.
-2. Run the following command in the terminal: ```npx degit uWynell/typescript-module-boilerplate```
+```javascript
+require('cypress-mail-commands');
+```
+
+### Type definitions
+
+Import typescript definitions by adding them to your `tsconfig.json`. Add the cypress-mail-commands types before the Cypress types so intellisense will prefer the cypress-commands versions.
+
+```json
+"types": [
+    "cypress-mail-commands",
+    "cypress"
+]
+```
