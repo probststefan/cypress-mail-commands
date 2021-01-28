@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97d479eb-d97f-43b8-a5d4-a19570c564d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/mailcommands/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mailcommands/interfaces/Request.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mailcommands/providers/mailgun.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mailcommands/requests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mailgun-commands.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mailgun-commands.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611823411532</updated>
-      <workItem from="1611823412864" duration="1904000" />
+      <workItem from="1611823412864" duration="3039000" />
     </task>
     <servers />
   </component>
