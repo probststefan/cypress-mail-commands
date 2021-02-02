@@ -1,4 +1,4 @@
-# NPM TypeScript Module Boilerplate
+# Cypress Mail Commands
 
 [![npm version](https://badge.fury.io/js/cypress-mail-commands.svg)](https://badge.fury.io/js/cypress-mail-commands)
 
@@ -26,3 +26,14 @@ Import typescript definitions by adding them to your `tsconfig.json`. Add the cy
     "cypress"
 ]
 ```
+
+## TypeScript
+
+The definition for `cy.linkFromMail` command is in [index.d.ts](index.d.ts) file. If you are using JavaScript, include the following line in our spec files
+
+```js
+// cypress/integration/my-spec.js
+/// <reference types="@probststefan/cypress-mail-commands" />
+```
+
+With this line, you should have Intelligent Code Completion working in most IDEs and the TypeScript compiler should understand the `cy.linkFromMail` command.

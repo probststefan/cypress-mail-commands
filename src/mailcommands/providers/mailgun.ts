@@ -1,4 +1,4 @@
-import { HttpClient } from '../requests';
+import { HttpClient } from '../HttpClient';
 import Request from '../interfaces/Request';
 
 class MailgunApi extends HttpClient {
