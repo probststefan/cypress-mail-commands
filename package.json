@@ -1,6 +1,6 @@
 {
   "name": "cypress-mail-commands",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TypeScript NPM Module Boilerplate",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

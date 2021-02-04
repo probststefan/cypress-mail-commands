@@ -1,4 +1,6 @@
-import Request from './src/mailcommands/interfaces/Request';
+/// <reference types="cypress" />
+
+import MailRequest from './src/mailcommands/interfaces/MailRequest';
 
 declare namespace Cypress {
   interface Chainable {
@@ -18,6 +20,6 @@ declare namespace Cypress {
       });
      ```
      */
-    linkFromMail (request: Request): Chainable
+    linkFromMail (request: MailRequest): Chainable
   }
 }
