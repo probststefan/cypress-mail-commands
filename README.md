@@ -37,3 +37,16 @@ The definition for `cy.linkFromMail` command is in [index.d.ts](index.d.ts) file
 ```
 
 With this line, you should have Intelligent Code Completion working in most IDEs and the TypeScript compiler should understand the `cy.linkFromMail` command.
+
+## Usage
+
+```ts
+cy.linkFromMail({
+  email: "tom.hanks@mail.com",
+  subject: "Activate your account",
+  identifier: "a.activationlink",
+  begin: Cypress.moment().unix()
+}).then((link: string) => {
+  cy.visit(link);
+});
+```
