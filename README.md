@@ -27,6 +27,19 @@ Import typescript definitions by adding them to your `tsconfig.json`. Add the cy
 ]
 ```
 
+### Credentials
+
+```json
+"env": {
+  ...
+  "mailgunUsername": "YOUR_MAILGUN_USERNAME",
+  "mailgunPassword": "YOUR_MAILGUN_PASSWORD",
+  "mailgunApi": "https://api.eu.mailgun.net/v3/YOUR_PROJECT_DOMAIN",
+  "mailgunStorageApi": "https://storage.eu.mailgun.net/v3/domains/YOUR_PROJECT_DOMAIN",
+  ...
+}
+```
+
 ## TypeScript
 
 The definition for `cy.linkFromMail` command is in [index.d.ts](index.d.ts) file. If you are using JavaScript, include the following line in our spec files
