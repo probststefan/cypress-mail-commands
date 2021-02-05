@@ -6,5 +6,8 @@ const mailgunProvider = new Mailgun();
 const mailCommands = new MailCommands(mailgunProvider);
 
 Cypress.Commands.add('linkFromMail', (request: MailRequest) => {
-  return mailCommands.mailProvider.linkFromMail(request);
+  return mailCommands.mailProvider.linkFromMail(request)
+    .then((response) => {
+      return response;
+    });
 });

@@ -1,7 +1,6 @@
 import { HttpClient } from '../HttpClient';
 import MailRequest from '../interfaces/MailRequest';
 import MailProvider from '../interfaces/MailProvider';
-import { AxiosResponse } from 'axios';
 
 class MailgunApi extends HttpClient {
   public constructor() {
@@ -42,8 +41,8 @@ export class Mailgun implements MailProvider{
     this.storageApi = new MailgunStorageApi();
   }
 
-  linkFromMail(request: MailRequest): Promise<AxiosResponse> {
-    return new Promise<AxiosResponse>(() => {
+  linkFromMail(request: MailRequest): Promise<string> {
+    return new Promise((resolve, reject) => {
       return this.api.getMails(request).then((response) => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -51,10 +50,16 @@ export class Mailgun implements MailProvider{
           (mail: any) => mail.message.headers.subject.indexOf(request.subject) > -1,
         );
 
+        if (filteredMails.length === 0) {
+          reject("Mail not found");
+        }
+
         return this.storageApi.getMail(filteredMails[0].storage.key).then((response) => {
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
-          return Cypress.$(response['body-html']).find(request.identifier).attr('href');
+          const href = Cypress.$(response['body-html']).find(request.identifier).attr('href');
+
+          return resolve(href);
         });
       });
     })
